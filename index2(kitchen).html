@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подсчет калорий</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@600&family=Dancing+Script:wght@500&family=Merriweather&family=Montserrat:ital,wght@0,400;0,500;1,500&family=Noto+Serif+JP:wght@500&family=Old+Standard+TT:ital@0;1&family=Playfair+Display&family=Roboto:ital,wght@1,300&family=Satisfy&family=Source+Serif+Pro:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles2(kitchen).css">
+</head>
+<body>
+    <div class="container"> 
+        <h2> Подсчет калорий </h2>
+        <p>Для определения количества калорий, необходимого для корректировки веса, введите необходимую информацию</p>
+        <span><input class="height" type = "text" placeholder="Укажите свой рост в см" ></span>
+        <span><input class ="weight" type = "text" placeholder ="Укажите ваш вес в кг"></span>
+        <span><input type="text"class= "age" placeholder="Укажите ваш возраст"></span>
+        
+        <button class="chooseGender">Укажите ваш пол</button>
+            <select class="gender">
+                <option disabled> Укажите ваш пол </option>
+                <option> мужской </option>
+                <option> женский </option>
+            </select>
+        <p> Выберите уровень вашей физической активности</p>
+        <button class = "addActivity">Уровень активности</button>
+        <select class="activity">
+            <option disabled> Активность </option>
+            <option value = "1.2 " selected> Минимальная активность (отсутствие физических нагрузок, сидячая работа, минимум движения) </option>
+            <option value = "1.375"> Небольшая активность (легкие тренировки (3 раза в неделю) или прогулки, небольшая дневная активность в течение дня)</option>
+            <option value = "1.46"> Средняя активность (тренировки 4-5 раз в неделю, хорошая активность в течение дня) </option>
+            <option value = "1.55"> Активность выше среднего (интенсивные тренировки 5-6 раз в неделю, хорошая активность в течение дня) </option>
+            <option value = "1.64"> Повышенная активность (ежедневные тренировки, высокая дневная активность) </option>
+            <option value = "1.72"> Пысокая активность (ежедневные ультра-интенсивные тренировки и высокая дневная активность) </option>
+            <option value = "1.9"> Очень высокая активность (обычно речь идет о спортсменах в период соревновательной активности) </option>
+        </select>
+        <span>
+            <button class="btn">Расчитать</button>
+        </span>
+        <div class="contanerTwo">
+            <div class="containerUsualCal">
+                <p>Для поддержания веса с текущей физической актичностью вам необходимо потреблять</p>
+                <span class="usualCal"></span>
+                <span> ккал в день </span>
+            </div>
+            <div class="">
+                <p>Для снижения массы тела рекомендвано потреблять  </p>
+                <span class="deficit"></span>
+                <span> ккал в день</span>
+            </div>
+        </div>
+        <div class="">
+                <p>Для набора массы тела рекомендовано потреблять </p> 
+                <span class="proficit"></span>
+                <span> ккал в день</span>
+        </div>
+
+ <script src="script2(kitchen).js"></script>   
+</body>
+</html> 
