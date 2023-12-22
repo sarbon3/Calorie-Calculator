@@ -11,8 +11,6 @@ Counting calories can help you identify eating patterns that you may need to mod
 <h3>Contributing</h3>
 Bug reports and/or pull requests are welcome.
 
-<h3>Liscence</h3>
-The project can be used for educational purposes 
 
 -----
 
